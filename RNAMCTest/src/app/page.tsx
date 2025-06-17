@@ -16,8 +16,9 @@ export default function Home() {
           <p>Welcome to RNAMotifContrast</p>
         </div>
       </main>
-
+      <div className="flex justify-center items-center h-screen">
       <BabylonCanvas/>
+      </div>
     </div>
   )
 }

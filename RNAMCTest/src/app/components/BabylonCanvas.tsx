@@ -8,27 +8,26 @@ import Script from "next/script";
 
 
 export default function BabylonCanvas() {
-//   return (
-//     <div> 
-//       mounted(){
-//         const canvas = document.querySelector("canvas");
-//         new BasicScene(canvas);
-//       }
-//         <canvas></canvas>
-//     </div>
-//   )
-// }
+
 
 const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (canvas) {
+    if (!canvas) return;
       // Set width and height
-      canvas.width = 800;
-      canvas.height = 600;
+      canvas.width = window.innerWidth * 0.7;
+      canvas.height = window.innerHeight * 0.7;
       // Initialize the Babylon.js scene after setting dimensions
+      if (!canvas.getContext('webgl')) {
+      console.error('WebGL context not available');
+      return;
+    }
+
+    try {
       new BasicScene(canvas);
+    } catch (err) {
+      console.error('Error initializing BasicScene:', err);
     }
   }, []);
 
