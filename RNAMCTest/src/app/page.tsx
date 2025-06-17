@@ -1,3 +1,4 @@
+import BabylonCanvas from "./components/BabylonCanvas";
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
           <p>Welcome to RNAMotifContrast</p>
         </div>
       </main>
+
+      <BabylonCanvas/>
     </div>
   )
 }

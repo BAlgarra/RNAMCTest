@@ -2,3 +2,7 @@
 # yarn lockfile v1
 
 
+babylonjs@^8.12.1:
+  version "8.12.1"
+  resolved "https://registry.npmjs.org/babylonjs/-/babylonjs-8.12.1.tgz"
+  integrity sha512-8tVrUXMr2v0QkcNPRwNbgEiW1VqRqwso9yFvbvaYMYTjpJYcaB+wx/9LhjK6fvTR9wLL7F6KLP4JzW6aclhytA==
