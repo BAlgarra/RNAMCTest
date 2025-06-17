@@ -2,8 +2,8 @@ import {Scene, Engine} from "@babylonjs/core";
 
 export class BasicScene {
 
-    scene: BABYLON.Scene;
-    engine: BABYLON.Engine;
+    scene: Scene;
+    engine: Engine;
 
     constructor(private canvas: HTMLCanvasElement) {
         this.engine = new Engine(this.canvas, true);
@@ -15,7 +15,7 @@ export class BasicScene {
     }
 
 
-    CreateScene(): BABYLON.Scene {
+    CreateScene(): Scene {
         const scene = new Scene(this.engine);
 
         return scene;

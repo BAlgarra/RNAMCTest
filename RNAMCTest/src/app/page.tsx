@@ -2,6 +2,7 @@
 // This file is the main entry point for the RNAMotifContrast application.
 
 import BabylonCanvas from "./components/BabylonCanvas";
+import { BasicScene } from "./components/BabylonExamples/BasicScene";
 
 export default function Home() {
   return (
