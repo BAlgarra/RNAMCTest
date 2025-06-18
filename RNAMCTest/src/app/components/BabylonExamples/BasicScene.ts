@@ -35,21 +35,20 @@ export class BasicScene {
         const ball = MeshBuilder.CreateSphere("ball", {diameter: 1}, scene);
         ball.position = new Vector3(0,1,0);
 
-    //     const motif1: Motif = await getMotif(
-    //         '1Y26.json',
-    //          '#FF0000',
-    //    );
-    //    console.log(motif1);
+        const motif1: Motif = await getMotif(
+            '1Y26.json',
+             '#FF0000', // color
+       );
+       console.log(motif1);
 
-    //    const props: MotifProps = {
-    //          motif: motif1,
-    //             locked: false,
-    //    };
+       const props: MotifProps = {
+             motif: motif1,
+                locked: false,
+       };
 
       
-    //    scene.addMesh(motif1);
-    //    motif1.mesh.position = new Vector3(0, 1, 0);
-
+       scene.addMesh(motif1);
+       motif1.mesh.position = new Vector3(0, 1, 0);
 
         // const motifData = JSON.parse('1Y26.json');
         // const response = await fetch('/json/1Y26.json');
