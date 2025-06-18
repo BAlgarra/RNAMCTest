@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@babylonjs/core": "^8.12.1",
+    "@judah-silva/rnacanvas": "^0.0.6",
     "babylonjs": "^8.12.1",
     "next": "15.3.3",
     "react": "^19.0.0",

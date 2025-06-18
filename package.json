@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@judah-silva/rnacanvas": "^0.0.6",
     "babylonjs": "^8.12.1"
   }
 }
