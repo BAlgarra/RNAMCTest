@@ -3,6 +3,8 @@ import { FreeCamera, HemisphericLight, MeshBuilder, Vector3, Scene, Engine, Mesh
 import { getMotif, Motif, MotifProps, Quat, Vec3 } from '@judah-silva/rnacanvas'
 
 
+ export type MotifMesh =Record<string, any>
+//  export type MotifMesh =Record<string, any>
 export class BasicScene {
 
     scene: Scene;
@@ -35,20 +37,32 @@ export class BasicScene {
         const ball = MeshBuilder.CreateSphere("ball", {diameter: 1}, scene);
         ball.position = new Vector3(0,1,0);
 
+        // MotifMesh mm = fetch('/1Y26.json');
+        const mm: MotifMesh = await fetch('/2OZB.json').then(res => res.json());
+
         const motif1: Motif = await getMotif(
-            '1Y26.json',
+            '2OZB.json',
+             mm,
              '#FF0000', // color
        );
        console.log(motif1);
 
-       const props: MotifProps = {
-             motif: motif1,
-                locked: false,
-       };
+    //    export type MotifMesh =Record<string, any>
 
+        // const motif1 = new Motif({
+        //     id: '1Y26',
+        //     mesh: mm,
+        //     color: '#FF0000',
+        //     position: new Vec3(0, 1, 0),
+        //     rotation: new Quat(0, 0, 0, 1),
+        // });
+
+        // console.log(motif1);
+        // scene.addMesh(motif1.mesh);
+        // motif1.mesh.position = new Vector3(0, 1, 0);
       
-       scene.addMesh(motif1);
-       motif1.mesh.position = new Vector3(0, 1, 0);
+    //    scene.addMesh(motif1);
+    //    motif1.mesh.position = new Vector3(0, 1, 0);
 
         // const motifData = JSON.parse('1Y26.json');
         // const response = await fetch('/json/1Y26.json');

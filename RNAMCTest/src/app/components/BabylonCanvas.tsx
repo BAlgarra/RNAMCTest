@@ -5,6 +5,7 @@ import React, {useEffect, useRef} from "react";
 import * as BABYLON from "babylonjs";
 import {BasicScene} from "./BabylonExamples/BasicScene";
 import Script from "next/script";
+import { Canvas } from '@judah-silva/rnacanvas'
 
 
 export default function BabylonCanvas() {
@@ -33,7 +34,10 @@ const canvasRef = useRef<HTMLCanvasElement>(null);
 
   return (
     <div>
-      <canvas ref={canvasRef}></canvas>
+      <Canvas
+      title="rnaCanvas",
+      motifProps: MotifProps[],
+      />
     </div>
   );
 }

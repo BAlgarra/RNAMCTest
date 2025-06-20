@@ -3,7 +3,7 @@
 
 import BabylonCanvas from "./components/BabylonCanvas";
 import { BasicScene } from "./components/BabylonExamples/BasicScene";
-// import RNARenderer from "./components/RnaCanvas";
+import RNARenderer from "./components/RnaCanvas";
 
 export default function Home() {
   return (
@@ -18,8 +18,8 @@ export default function Home() {
         </div>
       </main>
       <div className="flex justify-center items-center h-screen">
-      <BabylonCanvas/>
-      {/* <RNARenderer/> */}
+      {/* <BabylonCanvas/> */}
+      <RNARenderer/>
       </div>
     </div>
   )
