@@ -1,6 +1,6 @@
 import { FreeCamera, HemisphericLight, MeshBuilder, Vector3, Scene, Engine, Mesh, VertexData } from "@babylonjs/core";
 // import motifData from 'public\json\1Y26.json'
-import { getMotif, Motif, MotifProps, Quat, Vec3 } from '@judah-silva/rnacanvas'
+// import { getMotif, Motif, MotifProps, Quat, Vec3 } from '@judah-silva/rnacanvas'
 
 
  export type MotifMesh =Record<string, any>
@@ -38,14 +38,14 @@ export class BasicScene {
         ball.position = new Vector3(0,1,0);
 
         // MotifMesh mm = fetch('/1Y26.json');
-        const mm: MotifMesh = await fetch('/2OZB.json').then(res => res.json());
+    //     const mm: MotifMesh = await fetch('/2OZB.json').then(res => res.json());
 
-        const motif1: Motif = await getMotif(
-            '2OZB.json',
-             mm,
-             '#FF0000', // color
-       );
-       console.log(motif1);
+    //     const motif1: Motif = await getMotif(
+    //         '2OZB.json',
+    //          mm,
+    //          '#FF0000', // color
+    //    );
+    //    console.log(motif1);
 
     //    export type MotifMesh =Record<string, any>
 

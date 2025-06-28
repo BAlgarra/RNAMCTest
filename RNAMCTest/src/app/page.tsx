@@ -1,8 +1,8 @@
 'use client';
 // This file is the main entry point for the RNAMotifContrast application.
 
-import BabylonCanvas from "./components/BabylonCanvas";
-import { BasicScene } from "./components/BabylonExamples/BasicScene";
+// import BabylonCanvas from "./components/BabylonCanvas";
+// import { BasicScene } from "./components/BabylonExamples/BasicScene";
 import RNARenderer from "./components/RnaCanvas";
 
 export default function Home() {
